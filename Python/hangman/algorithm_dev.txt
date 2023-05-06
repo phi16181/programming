@@ -1,0 +1,38 @@
+Rough notes (first pass)
+
+#program steps
+#program chooses a random word from a list of given words; assign it as 'the' word for the game
+#user is prompted for a letter; must enter a letter - error checking must be sorted
+#user enters a letter
+#program checks if letter is in 'the' word AND hasnt been used prior
+    #if letter is in 'the' word AND hasnt been used prior; congratulate user, update the score,
+    #remove the letter from the list of choices, restart the loop
+    #elseif
+    #if the letter has been previously chosen (in the list), ask the user to try again
+    #elseif
+    #if the letter is not in 'the' word AND in the choices, inform the user, update the score, add a letter in HANGMAN (graphics later)
+    #check number of turns; if not equal to 0, restart the loop, remove a turn from numer of turns (start with 6)
+
+#potential cases
+1. letter is chosen, has not been used, and is not in the word
+    actions: -+ 1 a turn, add letter to 'chosen already', notify player
+
+2. letter is chosen, has already been used
+    actions: -= 1 a turn, notify player
+
+3. letter is chosen and is in the word
+    actions: add letter to 'chosen already', update letter in word list, notify player
+
+4. out of turns
+    actions: break
+
+5. out of letters in the word - user wins
+    actions: break and notify user
+
+Refined steps (second pass)
+1. Pick the secret word (computer will do this)
+2. Draw a blank line for each letter in the word. We can use a list for this
+3. Start guessing letters if you are the player.
+4. Fill the letter in the blanks if the player guesses correctly. If a letter repeats, fill in both
+5. Draw part of the hangman when the players guess wrong. For our program, we'll spell out YOULOSE instead of drawing the figure
+6. The players win when they guess the correct word.
