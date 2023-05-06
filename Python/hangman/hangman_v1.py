@@ -1,3 +1,16 @@
+#!/usr/bin/env python
+# -*-coding:utf-8 -*-
+'''
+@File    :   hangman_v1.py
+@Time    :   2023/05/06 13:17:52
+@Author  :   Benjamin Manning 
+@Version :   3.0
+@Contact :   benjaminbmanning@gmail.com
+@License :   (C)Copyright 2023-2024, Benjamin Manning
+@Desc    :   None
+'''
+
+
 #import needed libraries
 import random as rd
 import os
