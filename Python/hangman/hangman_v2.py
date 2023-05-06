@@ -1,9 +1,21 @@
-"""Whats new in V2?
+#!/usr/bin/env python
+# -*-coding:utf-8 -*-
+'''
+@File    :   hangman_v2.py
+@Time    :   2023/05/06 13:17:52
+@Author  :   Benjamin Manning 
+@Version :   3.0
+@Contact :   benjaminbmanning@gmail.com
+@License :   (C)Copyright 2023-2024, Benjamin Manning
+@Desc    :   None
+
+Whats new in V2?
 Added functionality:
 1. placeholder display for chosen letters included in the word
 2. 'lost turn' counter in the form of 'YOULOSE' list (rather than displaying a hanged illustration
 3. Refactor of earlier code into functions, where applicable
 """
+
 #import needed libraries
 import random as rd
 import os
